@@ -126,6 +126,16 @@
       }
     }
   }
+
+  #testimonials {
+    &-b {
+      .family-photos {
+        img {
+          transform: rotate(0);
+        }
+      }
+    }
+  }
 }
 
 // Smartphones
