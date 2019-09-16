@@ -526,6 +526,8 @@ img {
       padding-top: 1rem; }
     #testimonials-a .testimonial-box .testimonial-ownerName {
       text-align: center; }
+  #testimonials-b .family-photos img {
+    transform: rotate(-90deg); }
   #contact-a .text-fields {
     grid-template-areas: "name" "email" "message"; }
   #contact-b .contact-info {

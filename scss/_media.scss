@@ -236,6 +236,14 @@
         }
       }
     }
+
+    &-b {
+      .family-photos {
+        img {
+          transform: rotate(-90deg);
+        }
+      }
+    }
   }
 
   // Contact Page
