@@ -94,7 +94,7 @@ img {
 
   &:before {
     content: "";
-    background: url(/dist/img/header-home.jpg) no-repeat center center/cover;
+    background: url(../img/header-home.jpg) no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -194,7 +194,6 @@ img {
   // Home Section C
   &-c {
     .home-images {
-      display: flex;
       display: flex;
       flex-wrap: wrap;
       padding: 5px;
