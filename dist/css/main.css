@@ -345,17 +345,10 @@ img {
   #testimonials-b .family-photos img {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    transform: rotate(90deg);
     height: 300px;
     width: 300px;
     margin: 5px; }
-  #testimonials-b .family-photos img:nth-child(1) {
-    transform: rotate(90deg); }
-  #testimonials-b .family-photos img:nth-child(2) {
-    transform: rotate(90deg); }
-  #testimonials-b .family-photos img:nth-child(3) {
-    transform: rotate(90deg); }
-  #testimonials-b .family-photos img:nth-child(4) {
-    transform: rotate(90deg); }
 
 #contact-a .text-fields {
   display: grid;
@@ -527,7 +520,7 @@ img {
     #testimonials-a .testimonial-box .testimonial-ownerName {
       text-align: center; }
   #testimonials-b .family-photos img {
-    transform: rotate(-90deg); }
+    transform: rotate(0); }
   #contact-a .text-fields {
     grid-template-areas: "name" "email" "message"; }
   #contact-b .contact-info {
