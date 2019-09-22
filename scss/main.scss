@@ -358,42 +358,6 @@ img {
 // Testimonials
 #testimonials {
   &-a {
-    // .testimonial-box {
-    //   display: grid;
-    //   grid-template-columns: repeat(3, 1fr);
-    //   border: 1px solid black;
-    //   border-width: 1.5px;
-    //   padding: 1.5rem;
-    //   margin: 1.5rem;
-
-    //   .testimonial-img {
-    //     grid-column: 1;
-    //     grid-row: 1 / span 2;
-    //     height: 275px;
-    //     width: auto;
-    //     justify-self: center;
-    //     border-radius: 30px;
-    //   }
-
-    //   .testimonial-dogName {
-    //     grid-column: 1;
-    //     grid-row: 3;
-    //     text-align: center;
-    //     margin-top: 1rem;
-    //   }
-
-    //   .testiomnial-content {
-    //     grid-column: 2 / span 3;
-    //     grid-row: 1 / span 2;
-    //     align-self: center;
-    //   }
-
-    //   .testiomnial-ownerName {
-    //     grid-column: 4;
-    //     grid-row: 3;
-    //   }
-    // }
-
     .testimonial-box {
       display: flex;
       border: 2px solid black;
@@ -440,19 +404,6 @@ img {
         width: 300px;
         margin: 5px;
       }
-
-      // img:nth-child(1) {
-      //   transform: rotate(90deg);
-      // }
-      // img:nth-child(2) {
-      //   transform: rotate(90deg);
-      // }
-      // img:nth-child(3) {
-      //   transform: rotate(90deg);
-      // }
-      // img:nth-child(4) {
-      //   transform: rotate(90deg);
-      // }
     }
   }
 }
