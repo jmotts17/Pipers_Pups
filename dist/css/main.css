@@ -318,23 +318,29 @@ img {
 
 #testimonials-a .testimonial-box {
   display: flex;
+  flex-direction: row;
   border: 2px solid black;
   padding: 2.5rem;
-  margin: 1.5rem;
-  justify-content: center;
-  align-items: center; }
-  #testimonials-a .testimonial-box .testimonial-img {
+  margin: 1.5rem; }
+
+#testimonials-a .testimonial-left {
+  display: flex;
+  flex-direction: column; }
+  #testimonials-a .testimonial-left img {
     height: 275px;
     width: auto;
-    border-radius: 30px; }
-  #testimonials-a .testimonial-box .testimonial-dogName {
-    text-align: center;
-    line-height: 2rem; }
-  #testimonials-a .testimonial-box .testimonial-content {
-    align-self: center;
-    padding-left: 1.5rem; }
-  #testimonials-a .testimonial-box .testimonial-ownerName {
-    display: block;
+    border-radius: 30px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); }
+  #testimonials-a .testimonial-left h3 {
+    margin-top: 0.5rem; }
+
+#testimonials-a .testimonial-right {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-left: 1.5rem; }
+  #testimonials-a .testimonial-right p {
     text-align: right; }
 
 #testimonials-b .family-photos {
@@ -345,7 +351,6 @@ img {
   #testimonials-b .family-photos img {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-    transform: rotate(90deg);
     height: 300px;
     width: 300px;
     margin: 5px; }
@@ -373,6 +378,27 @@ img {
   justify-items: center;
   text-align: center;
   line-height: 1.5rem; }
+
+#contact-c .litter-info {
+  display: flex; }
+  #contact-c .litter-info h3 {
+    text-align: center; }
+  #contact-c .litter-info p {
+    text-align: center;
+    line-height: 1.5; }
+  #contact-c .litter-info .waiting-list {
+    flex: 1; }
+    #contact-c .litter-info .waiting-list .bold {
+      font-weight: 600; }
+    #contact-c .litter-info .waiting-list ol {
+      line-height: 2;
+      padding-left: 2.5rem; }
+  #contact-c .litter-info .reserve-spot {
+    flex: 1;
+    align-content: center;
+    justify-content: center; }
+    #contact-c .litter-info .reserve-spot a {
+      color: #67b7e1; }
 
 #main-footer {
   height: 5rem; }
@@ -466,9 +492,7 @@ img {
       padding-bottom: 1.5rem; }
     #about-more .about-more-content img {
       grid-row: 5;
-      grid-column: 1; }
-  #testimonials-b .family-photos img {
-    transform: rotate(0); } }
+      grid-column: 1; } }
 
 @media (max-width: 500px) {
   #main-nav {
@@ -514,15 +538,13 @@ img {
     flex-direction: column;
     padding: 2rem 0.75rem;
     align-content: center; }
-    #testimonials-a .testimonial-box .testimonial-dogName {
-      border-bottom: 1.5px black solid;
-      padding-bottom: 1rem; }
-    #testimonials-a .testimonial-box .testimonial-content {
-      padding-top: 1rem; }
-    #testimonials-a .testimonial-box .testimonial-ownerName {
-      text-align: center; }
-  #testimonials-b .family-photos img {
-    transform: rotate(0); }
+  #testimonials-a .testimonial-left h3 {
+    border-bottom: 1.5px black solid;
+    padding-bottom: 1rem; }
+  #testimonials-a .testimonial-right blockquote {
+    margin-top: 1rem; }
+  #testimonials-a .testimonial-right p {
+    text-align: center; }
   #contact-a .text-fields {
     grid-template-areas: "name" "email" "message"; }
   #contact-b .contact-info {

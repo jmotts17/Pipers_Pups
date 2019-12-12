@@ -126,16 +126,6 @@
       }
     }
   }
-
-  #testimonials {
-    &-b {
-      .family-photos {
-        img {
-          transform: rotate(0);
-        }
-      }
-    }
-  }
 }
 
 // Smartphones
@@ -231,26 +221,21 @@
         flex-direction: column;
         padding: 2rem 0.75rem;
         align-content: center;
+      }
 
-        .testimonial-dogName {
+      .testimonial-left {
+        h3 {
           border-bottom: 1.5px black solid;
           padding-bottom: 1rem;
         }
-
-        .testimonial-content {
-          padding-top: 1rem;
-        }
-
-        .testimonial-ownerName {
-          text-align: center;
-        }
       }
-    }
 
-    &-b {
-      .family-photos {
-        img {
-          transform: rotate(0);
+      .testimonial-right {
+        blockquote {
+          margin-top: 1rem;
+        }
+        p {
+          text-align: center;
         }
       }
     }

@@ -360,30 +360,36 @@ img {
   &-a {
     .testimonial-box {
       display: flex;
+      flex-direction: row;
       border: 2px solid black;
       padding: 2.5rem;
       margin: 1.5rem;
-      justify-content: center;
-      align-items: center;
+    }
 
-      .testimonial-img {
+    .testimonial-left {
+      display: flex;
+      flex-direction: column;
+
+      img {
         height: 275px;
         width: auto;
         border-radius: 30px;
+        border: 1px solid #000;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
       }
 
-      .testimonial-dogName {
-        text-align: center;
-        line-height: 2rem;
+      h3 {
+        margin-top: 0.5rem;
       }
+    }
 
-      .testimonial-content {
-        align-self: center;
-        padding-left: 1.5rem;
-      }
+    .testimonial-right {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      padding-left: 1.5rem;
 
-      .testimonial-ownerName {
-        display: block;
+      p {
         text-align: right;
       }
     }
@@ -399,7 +405,6 @@ img {
       img {
         border: 1px solid #ccc;
         box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-        transform: rotate(90deg);
         height: 300px;
         width: 300px;
         margin: 5px;
@@ -449,6 +454,44 @@ img {
       justify-items: center;
       text-align: center;
       line-height: 1.5rem;
+    }
+  }
+
+  &-c {
+    .litter-info {
+      display: flex;
+
+      h3 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      .waiting-list {
+        flex: 1;
+
+        .bold {
+          font-weight: 600;
+        }
+
+        ol {
+          line-height: 2;
+          padding-left: 2.5rem;
+        }
+      }
+
+      .reserve-spot {
+        flex: 1;
+        align-content: center;
+        justify-content: center;
+
+        a {
+          color: $medium-color;
+        }
+      }
     }
   }
 }
