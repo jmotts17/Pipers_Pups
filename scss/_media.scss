@@ -258,6 +258,18 @@
         grid-gap: 3.5rem;
       }
     }
+
+    &-c {
+      .litter-info {
+        flex-direction: column;
+      }
+
+      .reserve-spot {
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+    }
   }
 
   // Footer

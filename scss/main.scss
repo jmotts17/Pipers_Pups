@@ -458,12 +458,12 @@ img {
   }
 
   &-c {
+    h3 {
+      text-align: center;
+    }
+
     .litter-info {
       display: flex;
-
-      h3 {
-        text-align: center;
-      }
 
       p {
         text-align: center;
@@ -472,25 +472,20 @@ img {
 
       .waiting-list {
         flex: 1;
-
-        .bold {
-          font-weight: 600;
-        }
+        padding: 0 4rem;
 
         ol {
           line-height: 2;
-          padding-left: 2.5rem;
         }
       }
+    }
 
-      .reserve-spot {
-        flex: 1;
-        align-content: center;
-        justify-content: center;
+    .reserve-spot {
+      align-content: center;
+      justify-content: center;
 
-        a {
-          color: $medium-color;
-        }
+      a {
+        color: $medium-color;
       }
     }
   }

@@ -10,6 +10,9 @@
 .text-center {
   text-align: center; }
 
+.text-bold {
+  font-weight: 600; }
+
 .section-title {
   font-size: 2.5rem;
   display: block;
@@ -379,26 +382,25 @@ img {
   text-align: center;
   line-height: 1.5rem; }
 
+#contact-c h3 {
+  text-align: center; }
+
 #contact-c .litter-info {
   display: flex; }
-  #contact-c .litter-info h3 {
-    text-align: center; }
   #contact-c .litter-info p {
     text-align: center;
     line-height: 1.5; }
   #contact-c .litter-info .waiting-list {
-    flex: 1; }
-    #contact-c .litter-info .waiting-list .bold {
-      font-weight: 600; }
-    #contact-c .litter-info .waiting-list ol {
-      line-height: 2;
-      padding-left: 2.5rem; }
-  #contact-c .litter-info .reserve-spot {
     flex: 1;
-    align-content: center;
-    justify-content: center; }
-    #contact-c .litter-info .reserve-spot a {
-      color: #67b7e1; }
+    padding: 0 4rem; }
+    #contact-c .litter-info .waiting-list ol {
+      line-height: 2; }
+
+#contact-c .reserve-spot {
+  align-content: center;
+  justify-content: center; }
+  #contact-c .reserve-spot a {
+    color: #67b7e1; }
 
 #main-footer {
   height: 5rem; }
@@ -550,6 +552,10 @@ img {
   #contact-b .contact-info {
     grid-template-columns: 1fr;
     grid-gap: 3.5rem; }
+  #contact-c .litter-info {
+    flex-direction: column; }
+  #contact-c .reserve-spot p {
+    margin-bottom: 1rem; }
   #main-footer {
     height: 8.5rem; }
     #main-footer .footer-content {
