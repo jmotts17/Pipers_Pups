@@ -386,6 +386,8 @@ img {
   justify-content: center; }
   #contact-c .reserve-spot a {
     color: #67b7e1; }
+  #contact-c .reserve-spot p {
+    margin-bottom: 1rem; }
 
 #main-footer {
   height: 5rem; }
